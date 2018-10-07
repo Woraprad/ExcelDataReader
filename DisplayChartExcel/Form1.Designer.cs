@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -37,6 +38,7 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.sheetCombo = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -115,12 +117,29 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 137);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(616, 356);
+            this.dataGridView1.Size = new System.Drawing.Size(284, 356);
             this.dataGridView1.TabIndex = 6;
+            // 
+            // zedGraphControl1
+            // 
+            this.zedGraphControl1.Location = new System.Drawing.Point(313, 137);
+            this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.zedGraphControl1.Name = "zedGraphControl1";
+            this.zedGraphControl1.ScrollGrace = 0D;
+            this.zedGraphControl1.ScrollMaxX = 0D;
+            this.zedGraphControl1.ScrollMaxY = 0D;
+            this.zedGraphControl1.ScrollMaxY2 = 0D;
+            this.zedGraphControl1.ScrollMinX = 0D;
+            this.zedGraphControl1.ScrollMinY = 0D;
+            this.zedGraphControl1.ScrollMinY2 = 0D;
+            this.zedGraphControl1.Size = new System.Drawing.Size(304, 356);
+            this.zedGraphControl1.TabIndex = 7;
+            this.zedGraphControl1.UseExtendedPrintDialog = true;
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(640, 530);
+            this.Controls.Add(this.zedGraphControl1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.sheetCombo);
             this.Controls.Add(this.statusStrip1);
@@ -148,6 +167,7 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ComboBox sheetCombo;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private ZedGraph.ZedGraphControl zedGraphControl1;
     }
 }
 
